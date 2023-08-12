@@ -22,13 +22,13 @@ ns[j] = '\0';
 return (ns);
 }
 /**
- * _scm - vergleichen a1 und a2 mit m
+ * _sncm - vergleichen a1 und a2 mit m
  * @a1: erste str
  * @a2: zweite str
  * @m: nummer
  * Return: die Verschidene Dinge
  */
-int _scm(char *a1, char *a2, int m)
+int _sncm(char *a1, char *a2, int m)
 {
 int j = 0, r = 0;
 if (a1 == NULL || a2 == NULL || !m)
