@@ -40,3 +40,26 @@ j++;
 }
 return (l);
 }
+/**
+ * _wzf_sn - zeigt wie lange ist es
+ * @g: etwas
+ * @a: akzeptiert
+ * Return: nummer
+ */
+int _wzf_sn(const char *g, const char *a)
+{
+int c, d;
+unsigned int e = 0;
+for (c = 0; g[c] != '\0'; c++)
+{
+for (d = 0; a[d] != '\0'; d++)
+{
+if (g[c] == a[d])
+{
+e++;
+break;
+}
+}
+}
+return (e);
+}
