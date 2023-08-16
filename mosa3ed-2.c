@@ -62,11 +62,11 @@ r = r * 10 + (a[j] - 48);
 return (r *s);
 }
 /**
- * str_drk - druckt einen Buchstabe
+ * sr_dr - druckt einen Buchstabe
  * @b: str
  * Return: nummer des char im str
  */
-int str_drk(char *b)
+int sr_dr(char *b)
 {
 int a, s = 0;
 if (b != NULL)

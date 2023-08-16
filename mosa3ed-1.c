@@ -9,12 +9,12 @@ int _putchar(char a)
 return (write(1, &a, 1));
 }
 /**
- * _sc - kopiert ein str
+ * _scy - kopiert ein str
  * @r: masdar
  * @d: pointer
  * Return: etwas
  */
-char *_sc(char *d, char *r)
+char *_scy(char *d, char *r)
 {
 int a = 0;
 while (r[a])
