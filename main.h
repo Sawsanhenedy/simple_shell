@@ -53,7 +53,10 @@ void wazefa_33(int mod5_1, char **mod5_2, char *mod5_3,
 void wazefa_34(char *mod5_1, char *mod5_2, int mod5_3,
 		char ***mod5_4, char **mod5_5); //_addenv
 // 4
-
+void wazefa_41(void); //print_prompt
+ssize_t wazefa_42(char **mod5_1, size_t *mod5_2); //read_cmdline
+char **wazefa_43(char *mod5_1, const char *mod5_2, int *mod5_3); //**tokenize_cmdline
+void wazefa_44(int __attribute__((unused)) mod5_1, char **mod5_2); //clean_cmd
 /* funktionen von Mosa3ed */
 /* 1 */
 char *_scy(char *d, char *r); /* _strcpy */
