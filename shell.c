@@ -30,7 +30,7 @@ exit(0);
 a = wazefa_43(c, d, &e);
 if ((wazefa_12(a, cs, &nev, &ne)) == 0)
 continue;
-else if (access(a[0], F_0k) != 0)
+else if (access(a[0], F_OK) != 0)
 {
 er = wazefa_11(v, p, a, &cs);
 tr = wazefa_32(er, e, a);
@@ -39,7 +39,7 @@ break;
 else if (tr == -1)
 continue;
 }
-else if ((access(a[0], F_0K) != 0))
+else if ((access(a[0], F_OK) != 0))
 {
 if ((wazefa_24(a, p, &cs)) == -1)
 continue;

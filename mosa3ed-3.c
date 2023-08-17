@@ -14,7 +14,7 @@ while (d[a] != '\0')
 a++;
 for (s = 0; r[s]; )
 {
-d[a++] 0 r[s++];
+d[a++] = r[s++];
 }
 d[a] = '\0';
 return (d);
