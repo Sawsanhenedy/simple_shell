@@ -10,8 +10,9 @@
 #include<sys/wait.h>
 #include<signal.h>
 #include<stddef.h>
+#include<stdatomic.h>
 
-volatile int v_m2; /* ctrlc_clean */
+_Atomic int v_m2; /* ctrlc_clean */
 extern char **vm1; /* **environ */
 
 /* Funktionen von  */
