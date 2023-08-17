@@ -11,52 +11,37 @@
 #include<signal.h>
 #include<stddef.h>
 
-volatile int v_m2; //ctrlc_clean
-extern char **vm1; //**environ
-
-/* struct & typedef */
-
-/**
- * struct bultin - struct for bultin cmd
- * @name: name of cmd
- * @handler: handler for the cmd
- */
-
-typedef struct bultin
-{
-	char *name;
-	void (*handler)(char **, char **);
-} bultin;
-
-typedef void (*sighandler_t)(int);
-
+volatile int v_m2; /* ctrlc_clean */
+extern char **vm1; /* **environ */
 
 /* Funktionen von  */
 
-// 1
-int wazefa_11( char **mod5_1, pid_t mod5_2, char **mod5_3
-		, int mod5_4); //exec_fullcmd
-int wazefa_12(char **mod5_1, char *mod5_2, int mod5_3
-		, char ***mod5_4,char **mod5_5); //shellbultin
-char *wazwfa_13(char **mod5_1, char *mod5_2); //*_getenv
-// 2
-void wazefa_21(int mod5_1); //ctrlc_handler
-void wazefa_22(char *mod5_1); //err_notfound
-void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3); //_handleenv
-int wazefa_24(char **mod5_1, pid_t mod5_2, int *mod5_3); //exec_cmd
-void wazefa_25(char **mod5_1); //_printenv
-// 3
-int wazefa_31(char **mod5_1); //_isvalidenvcmd
-int wazefa_32(int mod5_1, int mod5_2, char **mod5_3); //exec_returnhandler
+/* 1 */
+int wazefa_11(char **mod5_1, pid_t mod5_2, char **mod5_3
+		, int mod5_4); /* exec_fullcmd */
+int wazefa_12(char **mod5_1, char *mod5_2, int mod5_3,
+char ***mod5_4, char **mod5_5); /* shellbultin */
+char *wazwfa_13(char **mod5_1, char *mod5_2); /* *_getenv */
+/* 2 */
+void wazefa_21(int mod5_1); /* ctrlc_handler */
+void wazefa_22(char *mod5_1); /* err_notfound */
+void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3); /* _handleenv */
+int wazefa_24(char **mod5_1, pid_t mod5_2, int *mod5_3); /* exec_cmd */
+void wazefa_25(char **mod5_1); /* _printenv */
+/* 3 */
+int wazefa_31(char **mod5_1); /* _isvalidenvcmd */
+int wazefa_32(int mod5_1, int mod5_2, char **mod5_3); /* exec_returnhandler */
 void wazefa_33(int mod5_1, char **mod5_2, char *mod5_3,
-		char **mod5_4, char *mod5_5); //exitshell
+		char **mod5_4, char *mod5_5); /* exitshell */
 void wazefa_34(char *mod5_1, char *mod5_2, int mod5_3,
-		char ***mod5_4, char **mod5_5); //_addenv
-// 4
-void wazefa_41(void); //print_prompt
-ssize_t wazefa_42(char **mod5_1, size_t *mod5_2); //read_cmdline
-char **wazefa_43(char *mod5_1, const char *mod5_2, int *mod5_3); //**tokenize_cmdline
-void wazefa_44(int __attribute__((unused)) mod5_1, char **mod5_2); //clean_cmd
+		char ***mod5_4, char **mod5_5); /* _addenv */
+/* 4 */
+void wazefa_41(void); /* print_prompt */
+ssize_t wazefa_42(char **mod5_1, size_t *mod5_2); /* read_cmdline */
+char **wazefa_43(char *mod5_1, const char *mod5_2,
+int *mod5_3); /* **tokenize_cmdline */
+void wazefa_44(int __attribute__((unused)) mod5_1,
+char **mod5_2); /* clean_cmd */
 /* funktionen von Mosa3ed */
 /* 1 */
 char *_scy(char *d, char *r); /* _strcpy */
@@ -73,4 +58,20 @@ char *_wzf_sc(char *d, char *r); /* _strcat */
 char *_wzf_mm(char *a, char t, unsigned int u); /* _memset */
 void wzf_dlt(char **u, char *cl); /* cleanall */
 int _wzf_smp(char *a, char *b); /* _strcmp */
+/* shell.c */
+int main(int __attribute__((unused)) n,
+__attribute__((unused)) char **r,
+__attribute__((unused)) char **v);
+/* struct & typedef */
+/**
+ * struct bultin - struct for bultin cmd
+ * @name: name of cmd
+ * @handler: handler for the cmd
+ */
+typedef struct bultin
+{
+char *name;
+void (*handler)(char **, char **);
+} bultin;
+typedef void (*sighandler_t)(int);
 #endif

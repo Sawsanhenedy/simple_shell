@@ -20,12 +20,32 @@ char **a = NULL, **nev = NULL;
 v_m2 = 1;
 while (v_m2)
 {
-salma();
-salma(SIGINT, v_m2);
-g_s = Salma(&c, &s);
+wazefa_41();
+signal(SIGINT, wazefa_21);
+g_s = wazefa_42(&c, &s);
 if (g_s == 1)
 continue;
 else if (g_s == -1)
 exit(0);
-a = Salma(c, d, &e);
-if ((Salma(a, cs, &nev, &ne)
+a = wazefa_43(c, d, &e);
+if ((wazefa_12(a, cs, &nev, &ne)) == 0)
+continue;
+else if (access(a[0], F_0k) != 0)
+{
+er = wazefa_11(v, p, a, &cs);
+tr = wazefa_32(er, e, a);
+if (tr == 127)
+break;
+else if (tr == -1)
+continue;
+}
+else if ((access(a[0], F_0K) != 0))
+{
+if ((wazefa_24(a, p, &cs)) == -1)
+continue;
+}
+wazefa_44(e, a);
+}
+free(c);
+return (tr == 127 ? 127 : 0);
+}
