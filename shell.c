@@ -1,4 +1,5 @@
 #include"main.h"
+
 /**
  * main - bildt unserer SHELL
  * @n: Argumenten nummer
@@ -7,8 +8,8 @@
  * Return: Always Success
  */
 int main(int __attribute__((unused)) n,
-__attribute__((unused)) char **r,
-__attribute__((unused)) char **v)
+		__attribute__((unused)) char **r,
+		__attribute__((unused)) char **v)
 {
 pid_t p = 0;
 ssize_t g_s;
@@ -17,6 +18,7 @@ size_t s = 50;
 const char *d = " \t\f\r\n";
 int e = 0, cs = 0, er, tr;
 char **a = NULL, **nev = NULL;
+
 v_m2 = 1;
 while (v_m2)
 {
@@ -28,7 +30,7 @@ continue;
 else if (g_s == -1)
 exit(0);
 a = wazefa_43(c, d, &e);
-if ((wazefa_12(a, cs, &nev, &ne)) == 0)
+if ((wazefa_12(a, c, cs, &nev, &ne)) == 0)
 continue;
 else if (access(a[0], F_OK) != 0)
 {

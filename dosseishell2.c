@@ -3,11 +3,12 @@
 
 /**
  * wazefa_21 - func1
+ * Description: wazefa_21
  * @mod5_1: vp1
  */
 void wazefa_21(int mod5_1)
 {
-	(void)signum;
+	(void)mod5_1;
 	v_m2 = 0;
 }
 
@@ -36,39 +37,39 @@ void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3)
 	if (!tw)
 		return;
 	nmai = mod5_1[1], kachi = mod5_1[2];
-	nml = _sl(name);
+	nml = _sl(nmai);
 	for (h = 0; vm1[h]; h++)
-		if (_sncm(vm1[i], nmai, nml) == 0 &&
+		if (_sncm(vm1[h], nmai, nml) == 0 &&
 				(vm1[h][nml] == '=') && t3 == -1)
 		{
 			ac = vm1[h];
 			t3 = h;
 		}
 	lv = h;
-	if (kachi == NULL || (_strcmp(mod5_1[0], "unsetenv") == 0))
+	if (kachi == NULL || (_wzf_smp(mod5_1[0], "unsetenv") == 0))
 	{
 		if (t3 > -1)
 			vm1[t3] = "";
-		cleanall(mod5_1, NULL);
+		wzf_dlt(mod5_1, NULL);
 		return;
 	}
-	if (mod5_1 == NULL && id == -1)
+	if (mod5_1 == NULL && t3 == -1)
 	{
 		wazefa_34(nmai, kachi, lv, mod5_2, mod5_3);
-		cleanall(mod5_1, NULL);
+		wzf_dlt(mod5_1, NULL);
 		return;
 	}
-	*mod5_3 = malloc(_strlen(value) + nml + 2);
+	*mod5_3 = malloc(_sl(kachi) + nml + 2);
 	if (*mod5_3 == NULL)
 	{
 		perror("Malloc");
 		return;
 	}
-	_strcpy(*mod5_3, nmai);
-	_strcat(*mod5_3, "=");
-	_strcat(*mod5_3, value);
+	_scy(*mod5_3, nmai);
+	_wzf_sc(*mod5_3, "=");
+	_wzf_sc(*mod5_3, kachi);
 	vm1[t3] = *mod5_3;
-	cleanall(mod5_1, NULL);
+	wzf_dlt(mod5_1, NULL);
 }
 
 /**
@@ -80,7 +81,7 @@ void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3)
  */
 int wazefa_24(char **mod5_1, pid_t mod5_2, int *mod5_3)
 {
-	int h = 0, 7al;
+	int h = 0, hal;
 
 	v_m2 = 1;
 	mod5_2 = fork();
@@ -109,10 +110,10 @@ int wazefa_24(char **mod5_1, pid_t mod5_2, int *mod5_3)
 	}
 	else
 	{
-		wait(&7al);
-		if (WIFEXITED(7al))
+		wait(&hal);
+		if (WIFEXITED(hal))
 		{
-			*mod5_3 = WEXITSTATUS(7al);
+			*mod5_3 = WEXITSTATUS(hal);
 		}
 	}
 	return (0);
@@ -126,13 +127,13 @@ void wazefa_25(char **mod5_1)
 {
 	int h;
 
-	cleanall(mod5_1, NULL);
+	wzf_dlt(mod5_1, NULL);
 
 	for (h = 0; vm1[h] != NULL; h++)
 	{
-		if (_function(vm1[h]))
+		if (_sl(vm1[h]))
 		{
-			write(STDOUT_FILENO, vm1[h], _strlen(vm1[h]));
+			write(STDOUT_FILENO, vm1[h], _sl(vm1[h]));
 			_putchar('\n');
 		}
 	}

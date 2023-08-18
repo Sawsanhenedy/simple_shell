@@ -15,32 +15,13 @@
 _Atomic int v_m2; /* ctrlc_clean */
 extern char **vm1; /* **environ */
 
-/* Funktionen von  */
+/* Funktionen von salma */
 
 /* 1 */
-/**
- * wazefa_11 - func1 that makes so and so
- * @mod5_1: vp1
- * @mod5_2: vp2
- * @mod5_3: vp3
- * @mod5_4: vp4
- * Return: rakam ma
- */
-int wazefa_11(char **mod5_1, pid_t mod5_2, char **mod5_3,
-int mod5_4); /* exec_fullcmd */
-
-/**
- * wazefa_12 - func2 that makes so and so
- * @mod5_1: vp1
- * @mod5_2: vp2
- * @mod5_3: vp3
- * @mod5_4: vp4
- * @mod5_5: vp5
- * Return: rakam ma
- */
+int wazefa_11(char **mod5_1, pid_t mod5_2,
+		char **mod5_3, int *mod5_4); /* exec_fullcmd */
 int wazefa_12(char **mod5_1, char *mod5_2, int mod5_3,
-char ***mod5_4, char **mod5_5); /* shellbultin */
-
+		char ***mod5_4, char **mod5_5); /* shellbultin */
 /**
  * wazefa_13 - func3 that makes so and so
  * @mod5_1: vp1
@@ -49,20 +30,18 @@ char ***mod5_4, char **mod5_5); /* shellbultin */
  */
 char *wazefa_13(char **mod5_1, char *mod5_2); /* *_getenv */
 
-
 /* 2 */
 /**
  * wazefa_21 - func1
+ * Description: wazefa_21
  * @mod5_1: vp1
  */
 void wazefa_21(int mod5_1); /* ctrlc_handler */
-
 /**
  * wazefa_22 - func2
  * @mod5_1: vp1
  */
 void wazefa_22(char *mod5_1); /* err_notfound */
-
 /**
  * wazefa_23 - func3
  * @mod5_1: vp1
@@ -70,7 +49,6 @@ void wazefa_22(char *mod5_1); /* err_notfound */
  * @mod5_3: vp3
  */
 void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3); /* _handleenv */
-
 /**
  * wazefa_24 - func4
  * @mod5_1: vp1
@@ -79,7 +57,6 @@ void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3); /* _handleenv */
  * Return: raqam
  */
 int wazefa_24(char **mod5_1, pid_t mod5_2, int *mod5_3); /* exec_cmd */
-
 /**
  *wazefa_25 - func1
  *@mod5_1: vp1
@@ -89,11 +66,11 @@ void wazefa_25(char **mod5_1); /* _printenv */
 /* 3 */
 /**
  * wazefa_31 - function31
+ * Description: the frist function
  * @mod5_1: vp1
  * Return: raqm
  */
 int wazefa_31(char **mod5_1); /* _isvalidenvcmd */
-
 /**
  * wazefa_32 - func2
  * @mod5_1: vp1
@@ -102,35 +79,16 @@ int wazefa_31(char **mod5_1); /* _isvalidenvcmd */
  * Return: rqum
  */
 int wazefa_32(int mod5_1, int mod5_2, char **mod5_3); /* exec_returnhandler */
-
-/**
- * wazefa_33 - func3
- * @mod5_1: vp1
- * @mod5_2: vp2
- * @mod5_3: vp3
- * @mod5_4: vp4
- * @mod5_5: vp5
- */
 void wazefa_33(int mod5_1, char **mod5_2, char *mod5_3,
-char **mod5_4, char *mod5_5); /* exitshell */
-
-/**
- * wazefa_34 - func4
- * @mod5_1: vp1
- * @mod5_2: vp2
- * @mod5_3: vp3
- * @mod5_4: vp4
- * @mod5_5: vp5
- */
+		char **mod5_4, char *mod5_5); /* exitshell */
 void wazefa_34(char *mod5_1, char *mod5_2, int mod5_3,
-char ***mod5_4, char **mod5_5); /* _addenv */
+		char ***mod5_4, char **mod5_5); /* _addenv */
 
 /* 4 */
 /**
  * wazefa_41 - func1
  */
 void wazefa_41(void); /* print_prompt */
-
 /**
  * wazefa_42 - func2
  * @mod5_1: vp1
@@ -139,23 +97,17 @@ void wazefa_41(void); /* print_prompt */
  */
 ssize_t wazefa_42(char **mod5_1, size_t *mod5_2); /* read_cmdline */
 
-/**
- * wazefa_43 - func3
- * @mod5_1: vp1
- * @mod5_2: vp2
- * @mod5_3: vp3
- * Return: qw
- */
 char **wazefa_43(char *mod5_1, const char *mod5_2,
-int *mod5_3); /* **tokenize_cmdline */
-
+		int *mod5_3); /* **tokenize_cmdline */
 /**
  * wazefa_44 - func4
  * @mod5_1: vp1
  * @mod5_2: vp2
  */
 void wazefa_44(int __attribute__((unused)) mod5_1,
-char **mod5_2); /* clean_cmd */
+		char **mod5_2); /* clean_cmd */
+
+
 
 /* funktionen von Mosa3ed */
 

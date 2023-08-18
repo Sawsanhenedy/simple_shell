@@ -3,13 +3,14 @@
 
 /**
  * wazefa_31 - function31
+ * Description: the frist function
  * @mod5_1: vp1
  * Return: raqm
  */
 
 int wazefa_31(char **mod5_1)
 {
-	int i = 0;
+	int h = 0;
 
 	while (mod5_1[h] != NULL)
 		h++;
@@ -36,7 +37,7 @@ int wazefa_32(int mod5_1, int mod5_2, char **mod5_3)
 	}
 	else if (mod5_1 == -1)
 	{
-		clean_cmd(mod5_2, mod5_3);
+		wazefa_44(mod5_2, mod5_3);
 		return (-1);
 	}
 	return (0);
@@ -51,14 +52,14 @@ int wazefa_32(int mod5_1, int mod5_2, char **mod5_3)
  * @mod5_5: vp5
  */
 void wazefa_33(int mod5_1, char **mod5_2, char *mod5_3,
-		char **mod5_4, char *mod5_5);
+		char **mod5_4, char *mod5_5)
 {
 	int hs;
 	uintptr_t t;
 
 	if (mod5_2[1])
 	{
-		ha = _atoi(mod5_2[1]);
+		hs = _atoi(mod5_2[1]);
 		if (hs < 0)
 		{
 			perror("./hsh");

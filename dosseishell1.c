@@ -1,7 +1,8 @@
 #include <stdint.h>
 #include "main.h"
 /**
- * wazefa_11 - func1 that makes so and so
+ * wazefa_11 - func1
+ * Description: the frist function
  * @mod5_1: vp1
  * @mod5_2: vp2
  * @mod5_3: vp3
@@ -9,15 +10,16 @@
  * Return: rakam ma
  */
 
-int wazefa_11(char **mod5_1, pid_t mod5_2, char **mod5_3, int mod5_4)
+int wazefa_11(char **mod5_1, pid_t mod5_2, char **mod5_3, int *mod5_4)
 {
-int *mot8yer;
+int mot8yer;
 char *mot8_2 = NULL;
 char *mot8_3 = mod5_3[0];
+
 v_m2 = 1;
-mot8_2 = _getenv(mod5_1, mot8_3);
+mot8_2 = wazefa_13(mod5_1, mot8_3);
 if (mot8_2 == NULL)
-{ clean_cmd(1, mod5_3);
+{ wazefa_44(1, mod5_3);
 return (127); }
 mod5_2 = fork();
 if (mod5_2 == 0)
@@ -25,10 +27,10 @@ if (mod5_2 == 0)
 while (v_m2)
 { signal(SIGINT, wazefa_21);
 if (execve(mot8_2, mod5_3, NULL) == -1)
-{ free(mod5_3);
+{ free(mot8_2);
 perror("./hsh");
 return (-1); } }
-free(mod5_3); }
+free(mot8_2); }
 else if (mod5_2 < 0)
 {perror("./hsh");
 exit(1); }

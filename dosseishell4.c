@@ -44,9 +44,9 @@ ssize_t wazefa_42(char **mod5_1, size_t *mod5_2)
  */
 char **wazefa_43(char *mod5_1, const char *mod5_2, int *mod5_3)
 {
-	char *t8_1 = _strdup(cmdline);
+	char *t8_1 = _sd(mod5_1);
 	int h, tik;
-	char *t8_2 = _strdup(cmdline), *yor, **ner = NULL;
+	char *t8_2 = _sd(mod5_1), *yor, **ner = NULL;
 
 	*mod5_3 = 0;
 	yor = strtok(t8_1, mod5_2);
@@ -65,8 +65,8 @@ char **wazefa_43(char *mod5_1, const char *mod5_2, int *mod5_3)
 	yor = strtok(t8_2, mod5_2);
 	h = 0;
 	while (yor)
-	{ tik = _strlen(yor);
-		mod5_3[h] = malloc(sizeof(char) * (tik + 1));
+	{ tik = _sl(yor);
+		ner[h] = malloc(sizeof(char) * (tik + 1));
 		if (ner[h] == NULL)
 		{ perror("Memory allocation error");
 			for (h = 0; h < (*mod5_3); h++)
@@ -74,7 +74,7 @@ char **wazefa_43(char *mod5_1, const char *mod5_2, int *mod5_3)
 			exit(1);
 		}
 		_scy(ner[h], yor);
-		yor = strtok(NULL, *mod5_2);
+		yor = strtok(NULL, mod5_2);
 		h++;
 	}
 	ner[*mod5_3] = NULL;
@@ -94,5 +94,5 @@ void wazefa_44(int __attribute__((unused)) mod5_1, char **mod5_2)
 
 	for (dd = 0; dd < mod5_1 || mod5_2[dd] != NULL; dd++)
 		free(mod5_2[dd]);
-	free(dd);
+	free(mod5_2);
 }
