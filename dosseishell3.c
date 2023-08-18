@@ -74,8 +74,8 @@ void wazefa_33(int mod5_1, char **mod5_2, char *mod5_3,
 				free(mod5_5);
 			exit(hs);
 		}
-		mod5_1 = (uintptr_t)mod5_2[0];
-		exit(mod5_1);
+		t = (uintptr_t)mod5_2[0];
+		exit(t);
 	}
 	wzf_dlt(mod5_2, mod5_3);
 	if (mod5_4 != NULL)

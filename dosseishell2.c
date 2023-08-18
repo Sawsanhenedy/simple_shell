@@ -53,7 +53,7 @@ void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3)
 		wzf_dlt(mod5_1, NULL);
 		return;
 	}
-	if (mod5_1 == NULL && t3 == -1)
+	if (ac == NULL && t3 == -1)
 	{
 		wazefa_34(nmai, kachi, lv, mod5_2, mod5_3);
 		wzf_dlt(mod5_1, NULL);

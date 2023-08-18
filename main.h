@@ -12,7 +12,7 @@
 #include<stddef.h>
 #include<stdatomic.h>
 
-_Atomic int v_m2; /* ctrlc_clean */
+volatile int v_m2; /* ctrlc_clean */
 extern char **vm1; /* **environ */
 
 /* Funktionen von salma */
