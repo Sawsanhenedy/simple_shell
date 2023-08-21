@@ -18,10 +18,31 @@
 /* Funktionen von salma */
 
 /* 1 */
+
+/**
+ * wazefa_11 - func1
+ * Description: the frist function
+ * @mod5_1: vp1
+ * @mod5_2: vp2
+ * @mod5_3: vp3
+ * @mod5_4: vp4
+ * Return: rakam ma
+ */
 int wazefa_11(char **mod5_1, pid_t mod5_2,
 		char **mod5_3, int *mod5_4); /* exec_fullcmd */
+
+/**
+ * wazefa_12 - func2 that makes so and so
+ * @mod5_1: vp1
+ * @mod5_2: vp2
+ * @mod5_3: vp3
+ * @mod5_4: vp4
+ * @mod5_5: vp5
+ * Return: rakam ma
+ */
 int wazefa_12(char **mod5_1, char *mod5_2, int mod5_3,
 		char ***mod5_4, char **mod5_5); /* shellbultin */
+
 /**
  * wazefa_13 - func3 that makes so and so
  * @mod5_1: vp1
@@ -79,8 +100,24 @@ int wazefa_31(char **mod5_1); /* _isvalidenvcmd */
  * Return: rqum
  */
 int wazefa_32(int mod5_1, int mod5_2, char **mod5_3); /* exec_returnhandler */
+/**
+ * wazefa_33 - func3
+ * @mod5_1: vp1
+ * @mod5_2: vp2
+ * @mod5_3: vp3
+ * @mod5_4: vp4
+ * @mod5_5: vp5
+ */
 void wazefa_33(int mod5_1, char **mod5_2, char *mod5_3,
 		char **mod5_4, char *mod5_5); /* exitshell */
+/**
+ * wazefa_34 - func4
+ * @mod5_1: vp1
+ * @mod5_2: vp2
+ * @mod5_3: vp3
+ * @mod5_4: vp4
+ * @mod5_5: vp5
+ */
 void wazefa_34(char *mod5_1, char *mod5_2, int mod5_3,
 		char ***mod5_4, char **mod5_5); /* _addenv */
 
@@ -97,6 +134,13 @@ void wazefa_41(void); /* print_prompt */
  */
 ssize_t wazefa_42(char **mod5_1, size_t *mod5_2); /* read_cmdline */
 
+/**
+ * wazefa_43 - func3
+ * @mod5_1: vp1
+ * @mod5_2: vp2
+ * @mod5_3: vp3
+ * Return: qw
+ */
 char **wazefa_43(char *mod5_1, const char *mod5_2,
 		int *mod5_3); /* **tokenize_cmdline */
 /**
