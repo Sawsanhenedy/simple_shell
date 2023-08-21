@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdint.h>
 
 /**
  * wazefa_21 - func1
@@ -8,6 +7,8 @@
  */
 void wazefa_21(int mod5_1)
 {
+	int v_m2;
+
 	(void)mod5_1;
 	v_m2 = 0;
 }
@@ -32,12 +33,13 @@ void wazefa_22(char *mod5_1)
 void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3)
 {
 	int t3 = -1, h, lv, nml, tw = wazefa_31(mod5_1);
-	char *ac = NULL, *kachi, *nmai;
+	char *ac = NULL, *kachi, *nmai, **vm1;
 
 	if (!tw)
 		return;
 	nmai = mod5_1[1], kachi = mod5_1[2];
 	nml = _sl(nmai);
+
 	for (h = 0; vm1[h]; h++)
 		if (_sncm(vm1[h], nmai, nml) == 0 &&
 				(vm1[h][nml] == '=') && t3 == -1)
@@ -81,7 +83,7 @@ void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3)
  */
 int wazefa_24(char **mod5_1, pid_t mod5_2, int *mod5_3)
 {
-	int h = 0, hal;
+	int h = 0, hal, v_m2;
 
 	v_m2 = 1;
 	mod5_2 = fork();
@@ -126,6 +128,7 @@ int wazefa_24(char **mod5_1, pid_t mod5_2, int *mod5_3)
 void wazefa_25(char **mod5_1)
 {
 	int h;
+	char **vm1;
 
 	wzf_dlt(mod5_1, NULL);
 

@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 #include<unistd.h>
 #include<errno.h>
 #include<stdlib.h>
@@ -11,9 +12,8 @@
 #include<signal.h>
 #include<stddef.h>
 #include<stdatomic.h>
+#include <stdint.h>
 
-volatile int v_m2; /* ctrlc_clean */
-extern char **vm1; /* **environ */
 
 /* Funktionen von salma */
 
@@ -61,7 +61,7 @@ int wazefa_24(char **mod5_1, pid_t mod5_2, int *mod5_3); /* exec_cmd */
  *wazefa_25 - func1
  *@mod5_1: vp1
  */
-void wazefa_25(char **mod5_1); /* _printenv */
+void wazefa_25(char **mod5_1);/* _printenv */
 
 /* 3 */
 /**
@@ -219,18 +219,5 @@ int _wzf_smp(char *a, char *b); /* _strcmp */
 int main(int __attribute__((unused)) n,
 __attribute__((unused)) char **r,
 __attribute__((unused)) char **v);
-
-/* struct & typedef */
-/**
- * struct bultin - struct for bultin cmd
- * @name: name of cmd
- * @handler: handler for the cmd
- */
-typedef struct bultin
-{
-char *name;
-void (*handler)(char **, char **);
-} bultin;
-typedef void (*sighandler_t)(int);
 
 #endif

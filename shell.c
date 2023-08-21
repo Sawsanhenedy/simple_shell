@@ -12,12 +12,12 @@ int main(int __attribute__((unused)) n,
 		__attribute__((unused)) char **v)
 {
 pid_t p = 0;
-ssize_t g_s;
 char *c = NULL, *ne = NULL;
-size_t s = 50;
-const char *d = " \t\f\r\n";
-int e = 0, cs = 0, er, tr;
+int cs = 0, er, tr, v_m2, e = 0;
 char **a = NULL, **nev = NULL;
+const char *d = " \t\f\r\n";
+size_t s = 50;
+ssize_t g_s;
 
 v_m2 = 1;
 while (v_m2)

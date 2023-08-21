@@ -12,7 +12,7 @@
 
 int wazefa_11(char **mod5_1, pid_t mod5_2, char **mod5_3, int *mod5_4)
 {
-int mot8yer;
+int mot8yer, v_m2;
 char *mot8_2 = NULL;
 char *mot8_3 = mod5_3[0];
 
