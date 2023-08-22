@@ -1,5 +1,9 @@
 #include "main.h"
 #include <stdint.h>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 85942991d9bb4642b54fb8fa236739bd75047413
 /**
  * wazefa_41 - func1
  */
