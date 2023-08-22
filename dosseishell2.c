@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdint.h>
 /**
  * wazefa_21 - func1
  * Description: wazefa_21
@@ -33,7 +34,6 @@ void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3)
 {
 int t3 = -1, h, lv, nml, tw = wazefa_31(mod5_1);
 char *ac = NULL, *kachi, *nmai;
-
 if (!tw)
 return;
 nmai = mod5_1[1], kachi = mod5_1[2];

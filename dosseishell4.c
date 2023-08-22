@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdint.h>
 /**
  * wazefa_41 - func1
  */

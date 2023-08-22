@@ -14,12 +14,10 @@ int main(int __attribute__((unused)) n,
 pid_t p = 0;
 char *c = NULL, *ne = NULL;
 int cs = 0, er, tr, e = 0;
-int v_m2;
 char **a = NULL, **nev = NULL;
 const char *d = " \t\f\r\n";
 size_t s = 50;
 ssize_t g_s;
-
 v_m2 = 1;
 while (v_m2)
 {
