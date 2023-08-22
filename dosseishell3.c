@@ -97,7 +97,6 @@ void wazefa_34(char *mod5_1, char *mod5_2, int mod5_3,
 		char ***mod5_4, char **mod5_5)
 {
 	int na, h;
-	char **vm1;
 
 	*mod5_4 = malloc((mod5_3 + 2) * sizeof(char *));
 	if (*mod5_4 == NULL)

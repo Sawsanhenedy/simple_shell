@@ -14,6 +14,8 @@
 #include<stdatomic.h>
 #include <stdint.h>
 
+volatile int v_m2; /* ctrlc_clean */
+extern char **vm1; /* **environ */
 
 /* Funktionen von salma */
 

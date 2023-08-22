@@ -6,7 +6,6 @@
  */
 void wazefa_21(int mod5_1)
 {
-int v_m2;
 (void)mod5_1;
 v_m2 = 0;
 }
@@ -33,13 +32,14 @@ write(STDERR_FILENO, ": not found\n", 12);
 void wazefa_23(char **mod5_1, char ***mod5_2, char **mod5_3)
 {
 int t3 = -1, h, lv, nml, tw = wazefa_31(mod5_1);
-char *ac = NULL, *kachi, *nmai, **vm1;
+char *ac = NULL, *kachi, *nmai;
+
 if (!tw)
 return;
 nmai = mod5_1[1], kachi = mod5_1[2];
 nml = _sl(nmai);
 for (h = 0; vm1[h]; h++)
-if (_sncm(vm1, nmai, nml) == 0 && (vm1[h][nml] == '=') && t3 == -1)
+if (_sncm(vm1[h], nmai, nml) == 0 && (vm1[h][nml] == '=') && t3 == -1)
 {
 ac = vm1[h];
 t3 = h;
@@ -82,7 +82,7 @@ wzf_dlt(mod5_1, NULL);
 int wazefa_24(char **mod5_1, pid_t mod5_2, int *mod5_3)
 {
 int h = 0, hal;
-int v_m2 = 1;
+
 mod5_2 = fork();
 if (mod5_2 == 0)
 {
@@ -126,7 +126,7 @@ return (0);
 void wazefa_25(char **mod5_1)
 {
 int h;
-char **vm1;
+
 wzf_dlt(mod5_1, NULL);
 for (h = 0; vm1[h] != NULL; h++)
 {
