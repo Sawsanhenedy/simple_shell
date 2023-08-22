@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdint.h>
 /**
  * wazefa_21 - func1
  * Description: wazefa_21
